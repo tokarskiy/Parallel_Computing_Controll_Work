@@ -35,8 +35,8 @@ int main(int argc, char* argv[]){
     int partialArraySize = ARRAY_SIZE / processesCount;
     int rest = ARRAY_SIZE % processesCount;
 
-    int* sendCounts = new int[processesCount - 1];
-    int* displacements = new int[processesCount - 1];
+    int* sendCounts = new int[processesCount];
+    int* displacements = new int[processesCount];
 
     int sendIndex = 0;
     for (int i = 0; i < rest; i++){
